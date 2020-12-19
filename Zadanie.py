@@ -15,7 +15,4 @@ if __name__ == '__main__':
 
         for sentence in sentences:
             if "," in sentence:
-                with open('text.txt', 'r')as a:
-                    a_text = a.read()
-                    if sentence in a_text:
-                        print(f'{sentence}{a_text[a_text.rfind(sentence)+len(sentence)]}')
+                print("{}.".format(sentence))
